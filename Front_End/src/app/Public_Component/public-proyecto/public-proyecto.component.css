@@ -1,0 +1,268 @@
+.col {
+	position: relative;
+
+	z-index: 301;
+}
+
+h1 {
+	border-bottom: 2px solid #88b2ff;
+}
+
+.tit {
+	color: #08b1b1;
+	position: absolute;
+	margin-top: -130px;
+	font-size: 36px;
+	width: 264px;
+}
+
+.img__cont {
+	position: absolute;
+    background: rgb(90, 160, 156);
+    width: 170px;
+    height: 204px;
+    margin-top: -5px;
+    text-align: center;
+    z-index: 400;
+}
+
+.imgUtn__cont {
+	position: absolute;
+	background: rgb(90, 160, 156);
+	width: 160px;
+	height: 160px;
+	margin-left: 15px;
+	margin-top: 20px;
+	text-align: center;
+	z-index: 400;
+
+}
+.utn__logo {
+	margin-top: 30px;
+	width: 100px;
+	height: 100px;
+
+}
+
+.cont__info-utn {
+	display: inline-block;
+	position: relative;
+	width: 55vw;
+	height: fit-content;
+	background: rgb(88, 83, 83);
+	color: #fff;
+	margin-top: 15px;
+	margin-left: 79px;
+	text-align: initial;
+	margin-bottom: 29px;
+}
+
+.cont__info-utn p {
+	color: rgb(23, 214, 195);
+	font-size: 26px;
+	margin-top: 25px;
+	padding-left: 84px;
+}
+
+.cont__info-utn h4 {
+	padding-top: 30px;
+	padding-left: 84px;
+	font-size: 26px;
+	color: rgb(221, 221, 221);
+
+}
+
+#contEditFormUtn {
+    height: 204px;
+    overflow-y: auto;
+}
+
+.imgNac {
+    margin-top: 3px;
+    width: 164px;
+    height: 198px;
+    background: #000;
+}
+
+.modificarForm {
+	position: relative;
+	background: #585353;
+	margin-top: -200px;
+	height: 171px;
+	border: #08b1b1 2px solid;
+	margin-bottom: 21px;
+	z-index: 400;
+	display: grid;
+	grid-template-rows: repeat(2, 50%);
+	grid-template-columns: 30% auto;
+	width: 66vw;
+}
+
+.contInpImg {
+	width: 161px;
+	height: 161px;
+	background: #f1efef;
+	border: #08b1b1 2px solid;
+}
+
+.contInpImg input {
+	position: relative;
+	background: red;
+	height: 158px;
+	top: -20px;
+	width: 158px;
+	opacity: 0;
+}
+
+.g {
+	display: grid;
+	justify-items: center;
+	align-items: center;
+}
+
+.imagen {
+	grid-row: 1/3;
+	display: grid;
+}
+
+.btnAdd {
+	width: 100%;
+	height: 50px;
+	margin-top: 20px;
+}
+
+@media only screen and (max-width:837px) {
+	#tem {
+		display: inline-block;
+	}
+
+	.formacion {
+		text-align: center;
+		display: inline-block;
+	}
+
+	.cont__img {
+		display: grid;
+		position: absolute;
+		width: 70vw;
+		margin-left: 4vw;
+		justify-items: center;
+		height: 200px;
+	}
+
+	.cont__info-utn {
+		width: 70vw;
+		height: fit-content;
+		margin-left: 4.3vw;
+		margin-top: 182px;
+		padding: 20px 13px 0px 13px;
+		text-align: center;
+		margin-bottom: 60px;
+	}
+
+	.cont__info-utn p {
+		padding-left: 0px;
+	}
+
+	.cont__info-utn h4 {
+		padding-left: 0px;
+	}
+
+	#contEditFormUtn {
+		height: 235px;
+	}
+
+	#img__formacion {
+		left: 2px;
+		position: relative;
+	}
+
+	#img__formacion {
+		left: -1px;
+		position: relative;
+	}
+
+}
+
+/************************ BOTONES ******************************/
+.edit__F {
+	display: block;
+	position: absolute;
+	border-radius: 90%;
+	background: rgba(28, 26, 26);
+	outline: rgb(34, 243, 243) 3px solid;
+	width: 50px;
+	height: 50px;
+	top: -30px;
+	right: -20px;
+	text-align: center;
+	z-index: 420;
+	float: right;
+}
+
+.edit__Fnone {
+	display: none;
+	position: absolute;
+	border-radius: 90%;
+	background: rgba(28, 26, 26);
+	outline: rgb(34, 243, 243) 3px solid;
+	width: 50px;
+	height: 50px;
+	top: -30px;
+	right: -20px;
+	text-align: center;
+	z-index: 420;
+	float: right;
+}
+
+.icon__edit-F {
+	width: 25px;
+	position: absolute;
+	margin-top: 10px;
+	margin-left: -10px;
+
+}
+
+/****** Boton2******/
+.edit__F-2 {
+
+	position: absolute;
+	width: 50px;
+	top: -50px;
+	right: 12px;
+	z-index: 401;
+}
+
+.edit__F-2 img {
+	display: inline-block;
+	outline: rgb(34, 243, 243) 3px solid;
+	border-radius: 90px;
+	background: #1C1A1A;
+
+}
+
+.icon__X-F {
+	position: absolute;
+	margin-top: 50px;
+}
+
+@media only screen and (max-width:837px) {
+	.edit__F {
+		right: 66vw;
+	}
+
+	/******* Boton2 ******/
+	.icon__X-F {
+		margin-top: 60px;
+		margin-left: -50px;
+	}
+
+	.edit__F-2 {
+		right: 66vw;
+	}
+
+	.btnAdd {
+		position: relative;
+		right: -10px;
+	}
+}

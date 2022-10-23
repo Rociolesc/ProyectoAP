@@ -1,0 +1,16 @@
+<article class="col" id="Experiencia">
+    <div>
+        <h1 class="tit">Experiencia</h1>
+    </div>
+    <div class="cont__info-perfil" *ngFor="let item of listExperiencia,let id=index">
+        <div id="contEditPerfil" class="info__perfil">
+            <h2 id="colorFontPerfil1">{{item.fechaInicio}} - {{item.fechaFinal}}</h2>
+        </div>
+        <div id="contEditPerfil" class="info__perfil">
+            <h2 id="colorFontPerfil1">{{item.nombreEmpresa}}</h2>
+        </div>
+        <div id="contEditPerfil" class="info__perfil">
+            <h2 id="colorFontPerfil1">{{item.puesto}}</h2>
+        </div>
+    </div>
+</article>

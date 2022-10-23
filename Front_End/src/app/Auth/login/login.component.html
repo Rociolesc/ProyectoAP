@@ -1,0 +1,25 @@
+<div class="body_form">
+    <button class="X" routerLink="/">X</button>
+    <div class="container_login">
+        <form [formGroup]="form"  class="login">
+            <label class="label">Username</label>
+            <input class="input" type="text" formControlName="userName"
+            [ngClass]="{'is-invalid':UserName?.errors && UserName?.touched,'is-valid':!UserName?.errors && UserName?.touched}"
+            >
+            <div *ngIf="UserName?.errors && UserName?.touched">
+                <p *ngIf="UserName?.hasError('required')">
+                    El nombre de usuario es requerido
+                </p>
+            </div>
+            <label class="label" style="padding-top: 70px;">Password</label>
+            <input class="input" type="text" formControlName="password">
+            <div *ngIf="Password?.errors && Password?.touched">
+                <p *ngIf="Password?.hasError('required')">
+                    El nombre de usuario es requerido
+                </p>
+            </div>
+        </form>
+        <button class="Ingresar">Ingresar</button>
+    </div>
+
+</div>

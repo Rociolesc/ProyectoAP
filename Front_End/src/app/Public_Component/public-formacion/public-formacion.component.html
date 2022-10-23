@@ -1,0 +1,22 @@
+<article class="col" class="formacion">
+    <div>
+        <h1 class="tit">Formacion</h1>
+    </div>
+    <div *ngFor="let itm of formacionLista">
+        <div id="tem">
+            <!-- <div class="cont__img">
+                <div class="imgUtn__cont" id="img__formacion">
+                    <div class="img__cont" id="img__formacion">
+                        <img class="imgNac" [src]="itm.imagen">
+                    </div>
+                </div>
+            </div>-->
+            <div class="cont__info-utn">
+                <div id="contEditFormUtn">
+                    <h4 id="colorFontFUtn1">{{itm.fechaInicio}} - {{itm.fechaFinal}}</h4>
+                    <p id="colorFontFUtn2">{{itm.carrera}}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</article>

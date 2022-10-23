@@ -1,0 +1,15 @@
+<article class="col" id="Habilidadess">
+    <div>
+        <h1 class="tit">Habilidades</h1>
+    </div>
+    <div *ngFor="let itm of habilidadesLista,let id=index">
+        <div class="Resp__cont">
+            <div id="contEditFormHResp" class="contEditFormHResp">
+                <p id="colorFontHResp1" class="colorFontHResp1">{{itm.habilidad}}</p>
+            </div>
+        </div>
+        <div class="porc__ext">
+            <div class="porc__int" id="porcInt" [ngStyle]="{'width':itm.porcentaje+'%'}"  #porcentaje></div>
+        </div>
+    </div>
+</article>
