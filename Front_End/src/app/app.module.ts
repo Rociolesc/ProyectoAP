@@ -28,6 +28,8 @@ import { PublicFormacionComponent } from './Public_Component/public-formacion/pu
 import { PublicHabilidadComponent } from './Public_Component/public-habilidad/public-habilidad.component';
 import { PublicProyectoComponent } from './Public_Component/public-proyecto/public-proyecto.component';
 import { LoginComponent } from './Auth/login/login.component';
+import { FrontBodyComponent } from './Body/front-body/front-body.component';
+import { PublicBodyComponent } from './Body/public-body/public-body.component';
 
 @NgModule({
   declarations: [
@@ -51,7 +53,9 @@ import { LoginComponent } from './Auth/login/login.component';
     PublicFormacionComponent,
     PublicHabilidadComponent,
     PublicProyectoComponent,
-    LoginComponent
+    LoginComponent,
+    FrontBodyComponent,
+    PublicBodyComponent
   ],
   imports: [
     BrowserModule,

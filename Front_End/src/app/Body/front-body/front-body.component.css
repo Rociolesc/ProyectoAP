@@ -1,0 +1,57 @@
+.btnCS__Container{
+	display: grid;
+    justify-items: end;
+    margin-right: 15px;
+    margin-top: 15px;
+}
+.btnCS{
+	background: #08b1b1;
+    display: grid;
+    height: 40px;
+    width: 200px;
+    font-size: 20px;
+    justify-items: center;
+    align-items: center;
+    color: #eee;
+}
+.sec{
+	display: grid;
+	margin-top: 54vh;
+	justify-items: center;
+	transition:all 1s;
+	text-align: center;
+	
+}
+.row{
+	width:70vw ;
+	height:fit-content ;
+	background:rgba(28, 26, 26, 0.46);
+	position:relative;
+	z-index:301;
+	padding:81px 0px;
+	left: 0;
+}
+
+#Contacto{
+	text-align: center;
+}
+@media only screen and (max-width:837px){
+
+.row{
+	width: 100%;
+}
+#Experiencia{
+	display: grid;
+	justify-items: center;
+}
+
+#Habilidades{
+	display: grid;
+	text-align: center;
+	justify-items: center;
+	margin-left: 0px;
+}
+#Habilidades div{
+	margin-left: 0px;
+}
+}

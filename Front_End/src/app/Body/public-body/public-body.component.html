@@ -1,0 +1,21 @@
+<app-fondo></app-fondo>
+<app-menu></app-menu>
+<app-nav></app-nav>
+<app-banner></app-banner>
+<section class="container-lg" class="sec" id="sec">
+    <div class="row"id="Perfil">
+        <app-public-perfil></app-public-perfil>
+    </div>
+    <div *ngIf="isValidExperiencia" class="row"id="Experiencia">
+        <app-public-experiencia></app-public-experiencia>
+    </div>
+    <div *ngIf="isValidformacion" class="row" id="Formacion">
+        <app-public-formacion></app-public-formacion>
+    </div >
+    <div *ngIf="isValidHabilidad" class="row" id="Habilidades">
+        <app-public-habilidad></app-public-habilidad>
+    </div>
+    <div *ngIf="isValidProyecto" class="row"id="Proyecto" >
+        <app-public-proyecto></app-public-proyecto>
+    </div>
+</section>
