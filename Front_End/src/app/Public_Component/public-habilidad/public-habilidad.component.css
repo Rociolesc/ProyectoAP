@@ -1,0 +1,225 @@
+.col{
+	position: relative;
+	
+	z-index: 301;
+}
+
+h1 {
+	border-bottom: 2px solid #88b2ff;
+}
+
+.tit {
+	color: #08b1b1;
+	position: absolute;
+	margin-top: -130px;
+	font-size: 36px;
+	width: 264px;
+	left: 0;
+}
+.TextareaHabilidad{
+	display: none;
+    top: -16px;
+    padding-top: 11px;
+    padding-left: 0;
+    position: absolute;
+    width: 200px;
+    height: 58px;
+    text-align: center;
+    font-size: 26px;
+    right: -0.2vw;
+    background-color: rgb(88 83 83);
+    color: rgb(221 221 221);
+    resize: none;
+    margin-block-start: 0.67em;
+    margin-block-end: 0.67em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: normal;
+    border-radius: 45px;
+    font-family: SFMono-Regular;
+    outline: rgb(34, 243, 243) 1px solid;
+}
+#textareaResol{
+	width: 303px;
+}
+.Resp__cont {
+	width: fit-content;
+	padding:0px 20px;
+	height: 60px;
+	border-radius: 30px;
+	text-align: center;
+	background: rgb(88,83,83);
+	margin-top: 20px;
+	position: relative;
+	z-index: 400;
+	margin-left: 40px;
+}
+.contEditFormHResp{
+	height: 60px;
+	overflow-y: auto;
+}
+.colorFontHResp1{
+	font-size: 23px;
+	padding-top: 16px;
+	color: rgb(221,221,221);
+}
+.porc__ext{
+	border: rgb(77, 133, 130) 2px solid;
+	width: 50vw;
+	height: 30px;
+	border-radius: 20px;
+	margin-top: 33px;
+	margin-left: 7.1vw;
+	position: relative;
+	z-index: 400;
+}
+.porc__int{
+	position: absolute;
+	background:  rgb(90,160,156) ;
+	width: 38.5vw;
+	height: 26px;
+	border-radius: 20px;
+}
+.Resol__cont{
+	width: fit-content;
+	padding:0px 20px;
+	border-radius: 30px;
+	text-align: center;
+	background: rgb(88,83,83) ;
+	margin-top: 64px;
+	position: relative;
+	z-index: 400;
+	margin-left: 40px;
+}
+.contEditFormHResol{
+	height: 60px;
+	overflow-y: auto;
+}
+.colorFontHResol1{
+	font-size: 23px;
+	padding-top: 16px;
+	color:rgb(221,221,221);
+}
+.Proac__cont{
+	width: fit-content;
+	padding:0px 20px;
+	border-radius: 30px;
+	text-align: center;
+	background: rgb(88,83,83);
+	margin-top: 64px;
+	position: relative;
+	z-index: 400;
+	margin-left: 40px;
+}
+.contEditFormHProac{
+	height: 60px;
+	overflow-y: auto;
+}
+.colorFontHProac1{
+	font-size: 23px;
+	padding-top: 16px;
+	color: rgb(221,221,221);
+}
+.Ingles__cont{
+	font-size: 23px;
+	width: fit-content;
+	padding:0px 20px;
+	border-radius: 30px;
+	text-align: center;
+	background: rgb(88,83,83);
+	margin-top: 64px;
+	position: relative;
+	z-index: 400;
+	margin-left: 40px;
+}
+.contEditFormHIngles{
+	height: 60px;
+	overflow-y: auto;
+}
+.colorFontHIngles1{
+	font-size: 23px;
+	padding-top: 16px;
+	color: rgb(221,221,221);
+}
+.btnAdd {
+    width: 100%;
+    height: 50px;
+    margin-top: 20px;
+}
+
+@media only screen and (max-width:837px){
+#Habilidades{
+	display: grid;
+	text-align: center;
+	justify-items: center;
+	margin-left: 0px;
+}
+#Habilidades div{
+	margin-left: 0px;
+}
+.porc__ext{
+	width: 75vw;
+}
+.porc__int{
+	width: 48.5vw;
+}
+
+}
+
+/********************* BOTONES ************************************/
+.edit__FP{
+	display: inline-block;
+	position: absolute;
+	border-radius: 90% ;
+	background:rgba(28, 26, 26);
+	outline: rgb(34, 243, 243) 3px solid;
+	width: 50px;
+	height: 50px;
+	margin-top:-110px;
+	left:0px;
+	text-align: center;
+	z-index: 410;
+	left: 61px;
+}
+.edit__FP2{
+	display: inline-block;
+	position: absolute;
+	border-radius: 90% ;
+	background:rgba(28, 26, 26);
+	outline: rgb(34, 243, 243) 3px solid;
+	width: 50px;
+	height: 50px;
+	margin-top:-110px;
+	left:0px;
+	text-align: center;
+	z-index: 410;
+}
+.icon__edit-FP{
+	width: 25px;
+	position: absolute;
+	margin-top: 10px;
+	margin-left: -10px;	
+}
+
+/**************** Boton2 ***************/
+.edit__FP-2{
+	display: none;
+	position: absolute;
+	width: 50px;
+	top: -60px;
+	right: 10px;
+	z-index: 350;
+	margin-right: 10px;
+}
+.edit__FP-2 img{
+	display:inline-block;
+	outline: rgb(34, 243, 243) 3px solid ;
+	border-radius: 90px;
+	background: #1C1A1A;
+	
+}
+.icon__X-FP{
+position: absolute;
+margin-top: 0px;
+margin-left: 10px;
+}

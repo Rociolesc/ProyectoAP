@@ -22,6 +22,12 @@ import { BannerComponent } from './Header/banner/banner.component';
 import { MenuComponent } from './Header/menu/menu.component';
 import { NavComponent } from './Header/nav/nav.component';
 import { FondoComponent } from './Header/fondo/fondo.component';
+import { PublicPerfilComponent } from './Public_Component/public-perfil/public-perfil.component';
+import { PublicExperienciaComponent } from './Public_Component/public-experiencia/public-experiencia.component';
+import { PublicFormacionComponent } from './Public_Component/public-formacion/public-formacion.component';
+import { PublicHabilidadComponent } from './Public_Component/public-habilidad/public-habilidad.component';
+import { PublicProyectoComponent } from './Public_Component/public-proyecto/public-proyecto.component';
+import { LoginComponent } from './Auth/login/login.component';
 
 @NgModule({
   declarations: [
@@ -39,7 +45,13 @@ import { FondoComponent } from './Header/fondo/fondo.component';
     BannerComponent,
     MenuComponent,
     NavComponent,
-    FondoComponent
+    FondoComponent,
+    PublicPerfilComponent,
+    PublicExperienciaComponent,
+    PublicFormacionComponent,
+    PublicHabilidadComponent,
+    PublicProyectoComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,

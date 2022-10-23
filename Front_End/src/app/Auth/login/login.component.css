@@ -1,0 +1,46 @@
+.body_form{
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    height: 100vh;
+}
+.container_login{
+    background: #575352;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    border-radius: 20px
+}
+.login{
+    display: grid;
+    margin: 70px 40px 110px;
+}
+.label{
+    font-size: 25px;
+    color: #eee;
+}
+.input{
+    width: 300px;
+    height: 30px;
+    margin-top: 15px;
+}
+.X{
+    font-size: 30px;
+    position: absolute;
+    margin-top: -400px;
+    margin-left: -340px;
+    padding: 10px;
+    border-radius: 190px;
+    border: 2px #08b1b1 solid;
+    color: #08b1b1;
+}
+.Ingresar{
+    position: relative;
+    top: -80px;
+    font-size: 30px;
+    padding: 10px 15px;
+    border: 2px #08b1b1 solid;
+    background: #57535200;
+    font-style: red;
+    color: #eee7da;
+}
