@@ -1,1 +1,15 @@
 /* You can add global styles to this file, and also import other style files */
+img{
+	border-style: none;
+	max-width: 100%;
+}
+*{
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+body {
+	background-image: url(./assets/imagenes/fondo__bosque.jpg);
+	background-size: cover;
+	background-attachment: fixed;
+  }

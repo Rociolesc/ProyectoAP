@@ -18,6 +18,10 @@ import { ModifAddExperienciaComponent } from './Edit_Component/Form/modif-add-ex
 import { ModifAddFormacionComponent } from './Edit_Component/Form/modif-add-formacion/modif-add-formacion.component';
 import { ModifAddHabilidadComponent } from './Edit_Component/Form/modif-add-habilidad/modif-add-habilidad.component';
 import { ModifAddProyectoComponent } from './Edit_Component/Form/modif-add-proyecto/modif-add-proyecto.component';
+import { BannerComponent } from './Header/banner/banner.component';
+import { MenuComponent } from './Header/menu/menu.component';
+import { NavComponent } from './Header/nav/nav.component';
+import { FondoComponent } from './Header/fondo/fondo.component';
 
 @NgModule({
   declarations: [
@@ -31,7 +35,11 @@ import { ModifAddProyectoComponent } from './Edit_Component/Form/modif-add-proye
     ModifAddExperienciaComponent,
     ModifAddFormacionComponent,
     ModifAddHabilidadComponent,
-    ModifAddProyectoComponent
+    ModifAddProyectoComponent,
+    BannerComponent,
+    MenuComponent,
+    NavComponent,
+    FondoComponent
   ],
   imports: [
     BrowserModule,

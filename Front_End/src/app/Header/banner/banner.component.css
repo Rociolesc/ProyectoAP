@@ -1,0 +1,107 @@
+.banner__conten{
+	display: flex;
+	position: relative;
+	justify-content: center;
+	top: 6em;
+	transition: all 1s;
+	opacity: 1;
+
+}
+.boton.edit__banner{
+	border: red 3px solid;
+}
+
+
+.banner__hijo {
+	color: rgba(16, 255, 226, 1);
+	z-index: 400;
+	border-radius: 90%;
+	width: 490px;
+	height: 490px;
+	
+	background: rgba(28, 26, 26, 0.86);
+	text-align: center;
+
+}
+.banner__hijo h1{
+	
+	width: 490px;
+	overflow-y: auto;
+	height: 200px;
+	position: relative;
+	margin-top:158px;
+	text-align: center;
+	font-size: 70px;
+}
+
+.text{
+	display: none;
+    top: -266px;
+    position: relative;
+    width: 493px;
+    height: 264px;
+    border-radius: 45%;
+    text-align: center;
+    font-size: 70px;
+    padding-top: 19px;
+    background-color: rgba(28, 26, 26);;
+    color: rgb(34, 243, 243);
+    resize: none;
+    margin-block-start: 0.67em;
+    margin-block-end: 0.67em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+    font-family: SFMono-Regular;
+    outline:rgb(34, 243, 243) 1px solid ;
+}
+@media only screen and (max-width: 837px){
+.banner__conten {
+    top: 36px;
+}
+.banner__hijo {
+    margin-top: 60px;
+    text-align: center;
+}
+
+.banner__hijo h1 {
+    font-size: 70px;
+}
+}
+@media only screen and (max-width: 508px){
+#banner__circulo {
+    margin-top: 62px;
+    width: 92vw;
+    height: 92vw;
+    padding-top: -20px;
+    text-align: center;
+}
+#contEditBann {
+    margin-left: 0px;
+    width: 92vw;
+    height: 92vw;
+    margin-top: 0px;
+    border-radius: 90%;
+    padding-top: 32%;
+}
+.text {
+    top: -380px;
+    width: 460px;
+}
+}
+@media only screen and (max-width: 460px){
+
+#contEditBann {
+    margin-left: 0px;
+    width: 92vw;
+    height: 92vw;
+    margin-top: 0px;
+    border-radius: 90%;
+    padding-top: 22%;
+}
+.text {
+    top: -338px;
+    width: 342px;
+    
+}
+}
