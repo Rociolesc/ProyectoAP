@@ -1,0 +1,31 @@
+<article class="col" id="Habilidadess">
+    <div>
+        <h1 class="tit">Habilidades</h1>
+    </div>
+    <div *ngIf="isValid">
+        <div *ngFor="let itm of habilidadesLista,let id=index">
+            <div class="Resp__cont">
+                <div id="contEditFormHResp" class="contEditFormHResp">
+                    <p id="colorFontHResp1" class="colorFontHResp1">{{itm.habilidad}}</p>
+                </div>
+            </div>
+            <div class="porc__ext">
+                <div class="porc__int" id="porcInt" [ngStyle]="{'width':itm.porcentaje+'%'}" #porcentaje></div>
+            </div>
+            <div class="edit__FP" id="editHrespPorc" routerLink="modificarHabilidades/{{itm.id}}"
+                [queryParams]="{modoEdicion:'1'}">
+                <img class="icon__edit-FP" src="./assets/imagenes/editar.png">
+            </div>
+            <div (click)="Delete(itm.id)" class="edit__FP2" id="editHrespPorc">
+                <img style="width:35px; margin-top: 7px;" class="icon__edit-F" src="./assets/imagenes/tash.png">
+            </div>
+        </div>
+    </div>
+    <div *ngIf="!isValid" style="color: #fff;font-size: 25px;padding-bottom: 20px;">
+        <h1>Se deben agregar habilidades</h1>
+    </div>
+    <button (click)="Add()" class="btnAdd">
+        <img style="height:100%" src="./assets/imagenes/add.png">
+    </button>
+</article>
+<router-outlet></router-outlet>

@@ -1,0 +1,34 @@
+<article class="col" id="Experiencia">
+    <div>
+        <h1 class="tit">Experiencia</h1>
+    </div>
+    <div *ngIf="isValid">
+       <div class="cont__info-perfil" *ngFor="let item of listExperiencia,let id=index">
+        <div id="contEditPerfil" class="info__perfil">
+            <h2 id="colorFontPerfil1">{{item.fechaInicio}} - {{item.fechaFinal}}</h2>
+        </div>
+        <div id="contEditPerfil" class="info__perfil">
+            <h2 id="colorFontPerfil1">{{item.nombreEmpresa}}</h2>
+        </div>
+        <div id="contEditPerfil" class="info__perfil">
+            <h2 id="colorFontPerfil1">{{item.puesto}}</h2>
+        </div>
+        <div>
+            <div ngClass="edit__perfil" #editPerfil1  routerLink="modificarExperiencia/{{item.id}}" [queryParams]="{modoEdicion:'1'}">
+                <img class="icon__edit-perfil" src="./assets/imagenes/editar.png">
+            </div>
+            <div (click)="Delete(item.id)" class='edit__E' #editFormacion1 >
+                <img style="margin-top: 12px;margin-left: -12px;" class="icon__edit-F" src="./assets/imagenes/tash.png">
+            </div>
+        </div>
+    </div> 
+    </div>
+    
+    <div *ngIf="!isValid" style="color: #fff;font-size: 25px;padding-bottom: 20px;">
+        <h1>Se deben agregar habilidades</h1>
+    </div>
+    <button (click)="Add()" class="btnAdd">
+        <img style="height:100%" src="./assets/imagenes/add.png">
+    </button>
+</article>
+

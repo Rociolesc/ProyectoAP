@@ -1,0 +1,60 @@
+.container {
+    background: #000000d1;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    top: 0;
+    left: 0;
+    z-index: 900;
+    justify-items: center;
+}
+
+.modificarForm {
+    background: #625f5f;
+    width: 60vw;
+    grid-template-rows: repeat(4, 15.285%);
+    display: grid;
+    align-items: center;
+    justify-items: center;
+
+}
+.Nombre{
+    position: relative;
+    z-index: 20;
+    margin-top: 8%;
+}
+.Nombre input{
+    border: #08b1b1 2px solid;
+    width: 33vw;
+    height: 40px;
+}
+.btnModif {
+    height: 45px;
+    width: 220px;
+    font-size: 23px;
+    margin-top: 40px;
+}
+
+.btnCancelar {
+    height: 45px;
+    width: 220px;
+    position: absolute;
+    bottom: 30px;
+    font-size: 23px;
+}
+@media only screen and (max-width:837px){
+    .modificarForm {
+        width: 100%;
+    }
+    .Nombre input{
+        width: 75vw;
+    }
+    .Titulo input{
+        width: 75vw;
+    }
+    .Informacion textarea{
+        width: 75vw;
+    }
+
+}

@@ -1,0 +1,30 @@
+<div class="container">
+    <div style="position:absolute; margin-top: 20px;color: #fff;font-size: 24px;">{{Titulo}}</div>
+
+    <form [formGroup]="formFormacion" (submit)="modificar()" errorTailor class="modificarForm" method="post" id="form"
+        name="modificarForm">
+        <!--<div class="Img">
+            <div class="contInpImg">
+                <img src="#">
+                <input class="inputImg"  id="idE" type="file">
+            </div>
+        </div>-->
+        <div style="margin-top: 400px;">
+            
+            <div  class="Nombre">
+                <input formControlName="fechaInicio" id="idE" type="date"  placeholder="Fecha de inicio">
+            </div>
+            <div>
+             <input type="checkbox" style="display: inline-block" (change)="actual($event)"><p style="display: inline-block;margin-left: 5px;color: #eee;">Actualmente</p>   
+            </div>
+            <div *ngIf="!act" class="Nombre">
+                <input formControlName="fechaFinal" id="idE" type="date" placeholder="Fecha final">
+            </div>
+            <div class="Informacion">
+                <textarea formControlName="carrera" id="idE" type="text" placeholder="carrera"></textarea>
+            </div>
+            <button class="btnModif" >{{Accion}}</button>
+        </div>
+    </form>
+    <button class="btnCancelar" (click)="cancelar()">Cancelar</button>
+</div>

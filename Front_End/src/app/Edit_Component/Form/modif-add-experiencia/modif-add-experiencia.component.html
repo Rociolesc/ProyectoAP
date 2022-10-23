@@ -1,0 +1,28 @@
+<div class="container">
+    <div style="position:absolute; margin-top: 20px;color: #fff;font-size: 24px;">{{Titulo}}</div>
+    <!--[formGroup]="formLogin"-->
+    <form [formGroup]="formExperiencia" (submit)="modificar()" errorTailor class="modificarForm" method="post" id="form"
+        name="modificarForm">
+        <div style="margin-top: 400px;">
+            <div class="Nombre">
+                <input formControlName="fechaInicio" id="idE" type="date" placeholder="Fecha de Inicio">
+            </div>
+            <div>
+                <input type="checkbox" style="display: inline-block" (change)="actual($event)">
+                <p style="display: inline-block;margin-left: 5px;color: #eee;">Actualmente</p>
+            </div>
+            <div *ngIf="!act" class="Nombre">
+                <input formControlName="fechaFinal" id="idE" type="date" placeholder="Fecha de Final">
+            </div>
+            <div class="Nombre">
+                <input formControlName="nombreEmpresa" id="idE" type="text" placeholder="Nombre de la Empresa">
+            </div>
+            <div class="Nombre">
+                <input formControlName="puesto" id="idE" type="text" placeholder="Puesto de Trabajo">
+            </div>
+            <button class="btnModif" type="submit">{{Accion}}</button>
+
+        </div>
+    </form>
+    <button class="btnCancelar" routerLink="/edit">Cancelar</button>
+</div>

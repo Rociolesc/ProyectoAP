@@ -1,0 +1,18 @@
+<div class="container">
+    <div style="position:absolute; margin-top: 20px;color: #fff;font-size: 24px;">{{Titulo}}</div>
+    <!--[formGroup]="formLogin"-->
+    <form [formGroup]="formHabilidad" (submit)="modificar()" errorTailor class="modificarForm" method="post" id="form"
+        name="modificarForm">
+        <div style="margin-top: 400px;">
+            <div class="Nombre">
+                <input formControlName="habilidad" id="idE" type="text" placeholder="Habilidad">
+            </div>
+            <div class="Titulo">
+                <input formControlName="porcentaje" min="0" max="100" id="idE" type="number"
+                    placeholder="Porcentaje de habilidad">
+            </div>
+            <button class="btnModif">{{Accion}}</button>
+        </div>
+    </form>
+    <button class="btnCancelar" routerLink="/edit">Cancelar</button>
+</div>

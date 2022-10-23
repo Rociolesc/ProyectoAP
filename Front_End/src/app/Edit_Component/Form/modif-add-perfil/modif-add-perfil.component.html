@@ -1,0 +1,30 @@
+<div class="container">
+    <div style="position:absolute; margin-top: 20px;color: #fff;font-size: 24px;">Modificar Perfil</div>
+    <form [formGroup]="formPerfil" enctype="multipart/form-data" (submit)="modificar()" class="modificarForm"
+        method="POST" action="/" id="form" name="modificarForm">
+        <div class="Img">
+            <div class="contInpImg">
+               
+                <input class="inputImg" id="idE" formControlName="imagenPerfil" name="Imagen"
+                    enctype="multipart/form-data" type="file" (change)="uploadImage($event)">
+            </div>
+        </div>
+        <div style="margin-top: 350px;">
+            <div class="Nombre" id="Info">
+                <input id="idE" type="text" placeholder="Nombre" formControlName="nombre">
+            </div>
+            <div class="Nombre" id="Info">
+                <input id="idE" type="text" placeholder="Apellido" formControlName="apellido">
+            </div>
+            <div class="Titulo" id="Info">
+                <input id="idE" type="text" placeholder="Titulo" formControlName="titulo">
+            </div>
+            <div class="Informacion" id="Info">
+                <textarea placeholder="Informacion" formControlName="descripcion"></textarea>
+            </div>
+        </div>
+
+        <button class="btnModif">Modificar</button>
+    </form>
+    <button class="btnCancelar" routerLink="/edit">Cancelar</button>
+</div>
