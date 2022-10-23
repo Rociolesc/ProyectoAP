@@ -1,0 +1,30 @@
+<div class="menu__cont" #menu >
+    <ul class="menu">
+        <li class="nav__li--logoArg">
+            <img src="./assets/imagenes/APLogo-20-20.png">
+        </li>
+        <a  href="#Perfil"><li class="li__menu  ">Perfil</li></a>
+        <a *ngIf="isValidExperiencia" href="#Experiencia"><li class="li__menu  ">Experiencia</li></a>
+        <a *ngIf="isValidformacion" href="#Formacion"><li class="li__menu  ">Formacion</li></a>
+        <a *ngIf="isValidHabilidad" href="#Habilidades"><li class="li__menu  habilidades">Habilidades</li></a>
+        <a *ngIf="isValidProyecto" href="#Proyecto"><li class="li__menu  ">Proyecto</li></a>
+        
+    </ul>
+    <button class="marker" id="button__menu" (click)="menu__split()" > Menu</button>
+    
+  </div>
+  <div class="menu__cont2" #menu2>
+    <ul class="menu2">
+        <li class="nav__li--logoArg2">
+            <img src="./assets/imagenes/APLogo-20-20.png">
+        </li>
+        <a href="#Perfil"><li class="li__menu2  ">Perfil</li></a>
+        <a *ngIf="isValidExperiencia" href="#Experiencia"><li class="li__menu2  ">Experiencia</li></a>
+        <a *ngIf="isValidformacion" href="#Formacion"><li class="li__menu2  ">Formacion</li></a>
+        <a *ngIf="isValidHabilidad" href="#Habilidades"><li class="li__menu2  habilidades2">Habilidades</li></a>
+        <a *ngIf="isValidProyecto" href="#Proyecto"><li class="li__menu2  ">Proyecto</li></a>
+        
+    </ul>
+    <button class="marker2" id="button__menu2" (click)="menu__splitVertical()"> Menu</button>
+    
+</div>

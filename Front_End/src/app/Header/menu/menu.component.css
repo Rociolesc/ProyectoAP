@@ -1,0 +1,164 @@
+.menu__cont2{
+	display: none;
+}
+.menu__cont{
+	background: rgb(66,62,61);
+	position: fixed;
+	width:200px;
+	left: -200px;
+	height: 100vh;
+	z-index: 850;
+    top: 0;
+}
+.menu{
+	top:0px;	
+	position: relative;
+	list-style: none;
+	background:	rgb(66,62,61);
+	z-index:849;
+	width: 200px;
+   
+	
+}
+.menu a{
+	text-decoration: none;
+}
+.li__menu{
+    display: inline-block;
+	background: rgb(86,83,82);
+	padding: 29px 0px 29px 0px;
+	margin-top: 5px;
+	z-index:55;
+	text-align: center;
+	width: 200px;
+	height: 94px;
+	color: rgba(16, 255, 226, 1);
+	font-size: 30px;
+}
+.nav__li--logoArg img{
+	position: relative;
+	height: 90px;
+	width: 180px;
+	
+	z-index: 10;
+}
+
+.marker{
+	display: inline-block;
+	background: rgb(66,62,61);
+	color: aliceblue;
+	position: absolute;
+	text-align: center;
+	width: 100px;
+	padding: 20px 0px 10px 0px;
+	border-radius: 30px;
+	top: 285px;
+	left: 160px;
+	transform: rotate(270deg);
+	z-index:848;
+    font-size: 25px;
+	
+}
+#topBanner{
+	top: 84vh;
+	left: -220px;
+	position: fixed;
+	background:rgb(66,62,61);
+	width: 50px;
+	height: 50px;
+	border-radius: 90%;
+	padding: 10px;
+	transform: rotate(-90deg);
+	transition-property: all;
+	transition-duration: 0.5s;
+    z-index: 830;
+}
+
+.li__menu:hover{
+	background: rgb(121, 116, 115);
+	width: 205px;
+	
+}
+@media only screen and (max-height:592px){
+	.menu__cont{
+		display:none;
+	}
+	.menu__cont2{
+		display: inline-block;
+		background: rgb(66,62,61);
+		position: fixed;
+		width:100vw;
+		left: 0px;
+		height: 183px;
+		z-index: 850;
+		top:-182px;
+	}
+	.menu2{
+		top:0px;	
+		position: relative;
+		list-style: none;
+		background:	rgb(66,62,61);
+		z-index:849;
+		width: 100vw;
+		height: 183px;
+		
+	}
+	.menu2 a{
+		text-decoration: none;
+	}
+	.li__menu2{
+		display: inline-block;
+		background: rgb(86,83,82);
+		padding: 29px 0px 29px 0px;
+		margin-top: 5px;
+		z-index:55;
+		text-align: center;
+		width: 20vw;
+		height: 83px;
+		color: rgba(16, 255, 226, 1);
+		font-size: 3.5vw;
+	}
+	.nav__li--logoArg2 img{
+		position: relative;
+		height: 90px;
+		width: 180px;
+		
+		z-index: 10;
+	}
+	
+	.marker2{
+		display: inline-block;
+		background: rgb(66,62,61);
+		color: aliceblue;
+		position: absolute;
+		text-align: center;
+		width: 100px;
+		padding: 24px 0px 10px 0px;
+		border-radius: 30px;
+		top: 161px;
+		left: 11px;
+		transform: rotate(0deg);
+		z-index:848;
+		font-size: 25px;
+		
+	}
+.li__menu2:hover{
+		background: rgb(121, 116, 115);
+		height: 87px;
+		
+	}
+}
+@media only screen and (max-width:639px){
+	.li__menu2 {
+		width: 20vw;
+		font-size: 4vw;
+	}
+}
+@media only screen and (max-height:592px){
+.nav__li--logoArg2 img{
+	position: relative;
+	height: 90px;
+	width: 180px;
+	z-index: 10;
+}
+}
