@@ -1,0 +1,23 @@
+<div class="container">
+    <div style="position:absolute; margin-top: 20px;color: #fff;font-size: 24px;">{{Titulo}}</div>
+    <!--[formGroup]="formLogin"-->
+    <form [formGroup]="formProyecto" (submit)="modificar()" errorTailor class="modificarForm" method="post" id="form"
+        name="modificarForm">
+        <!--<div class="Img">
+            <div class="contInpImg">
+                <img src="#">
+                <input class="inputImg" id="idE" type="file">
+            </div>
+        </div>-->
+        <div style="margin-top: 400px;">
+            <div class="Nombre" >
+                <input formControlName="nombreProyecto" id="idE" type="text" placeholder="Nombre del Proyecto">
+            </div>
+            <div class="Informacion" >
+                <textarea formControlName="descripcion" id="idE" type="text" placeholder="descripcion"></textarea>
+            </div>
+            <button  class="btnModif">{{Accion}}</button>
+        </div>
+    </form>
+    <button class="btnCancelar" routerLink="/edit">Cancelar</button>
+</div>

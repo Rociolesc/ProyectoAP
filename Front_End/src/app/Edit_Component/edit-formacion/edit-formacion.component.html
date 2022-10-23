@@ -1,0 +1,44 @@
+<article class="col" class="formacion">
+    <div>
+        <h1 class="tit">Formacion</h1>
+    </div>
+    <div>
+       <div *ngFor="let itm of formacionLista">
+        <div id="tem">
+           <!--<div class="cont__img">
+                <div class="imgUtn__cont" id="img__formacion">
+                    <div class='edit__F' #editFormacion1 routerLink="modificarFormacion/{{itm.id}}" [queryParams]="{modoEdicion:'1'}">
+                        <img class="icon__edit-F" src="./assets/imagenes/editar.png">
+                    </div>
+                    <div class="img__cont" id="img__formacion">
+                        <img class="imgNac" [src]="itm.imagen">
+                    </div>
+                </div>
+            </div>--> 
+            <div class="cont__info-utn">
+                <div id="contEditFormUtn">
+                    <h4 id="colorFontFUtn1">{{itm.fechaInicio.slice(8,12) +"/"+itm.fechaInicio.slice(5,7)+"/"+itm.fechaInicio.slice(0,4)}} - {{itm.fechaFinal}}</h4>
+                    <p id="colorFontFUtn2">{{itm.carrera}}</p>
+                </div>
+                <div>
+                    <div class='edit__F' #editFormacion1 routerLink="modificarFormacion/{{itm.id}}" [queryParams]="{modoEdicion:'1'}">
+                        <img class="icon__edit-F" src="./assets/imagenes/editar.png">
+                    </div>
+                    <div (click)="Delete(itm.id)" class='edit__F'style="margin-top: 65px;" #editFormacion1 >
+                        <img style="margin-top: 12px;margin-left: -12px;" class="icon__edit-F" src="./assets/imagenes/tash.png">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div> 
+    </div>
+    
+    <div *ngIf="!isValid" style="color: #fff;font-size: 25px;padding-bottom: 20px;">
+        <h1>Se deben agregar habilidades</h1>
+    </div>
+    <button (click)="Add()" class="btnAdd">
+        <img  style="height:100%" src="./assets/imagenes/add.png">
+    </button>
+</article>
+<router-outlet></router-outlet>

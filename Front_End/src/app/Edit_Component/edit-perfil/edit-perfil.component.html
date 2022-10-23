@@ -1,0 +1,27 @@
+<article class="col  col__perfil">
+    <div><h1 class="tit">Perfil</h1></div>
+    <div class="foto__cont">
+        <img class="foto__perfil" [src]="Data[0].img">
+        
+        <div class="carga__Img" #cargaImg1>
+            <input type="file" #Fil1>
+        </div>
+        <div class="carga__ImgRespon" #cargaImg2>
+            <input type="file" #Fil2>
+        </div>
+    </div>
+    <div class="cont__info-perfil">
+        <div id="contEditPerfil" class="info__perfil">
+
+            <h2 id="colorFontPerfil1">{{Data[0].nombre}}  {{Data[0].apellido}}</h2>
+            <h3 id="colorFontPerfil2">{{Data[0].titulo}}</h3>
+            <p id="colorFontPerfil3">{{Data[0].descripcion}}</p>
+        </div>
+        <div>
+            <div ngClass="edit__perfil" #editPerfil1  routerLink="modificarPerfil/{{Data[0].id}}">
+                <img class="icon__edit-perfil" src="./assets/imagenes/editar.png">
+            </div>
+        </div>
+    </div>
+</article>
+<router-outlet></router-outlet>
