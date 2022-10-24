@@ -4,7 +4,10 @@
         method="POST" action="/" id="form" name="modificarForm">
         <div class="Img">
             <div class="contInpImg">
-               
+                <div class="loading show" *ngIf="this.service.carga">
+                    <div class="spin"></div>
+                </div>
+                <img style="width: 160px;height: 156px;"  [src]="!carga ? Data.img: this.service.url">
                 <input class="inputImg" id="idE" formControlName="imagenPerfil" name="Imagen"
                     enctype="multipart/form-data" type="file" (change)="uploadImage($event)">
             </div>

@@ -29,28 +29,66 @@
     border: #08b1b1 2px solid;
 }
 
+.loading {
+    position: absolute;
+    
+    display: grid;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    z-index: 9999;
+    transition: 1s all;
+    justify-items: center;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+}
+
+.loading.show {
+    opacity: 1;
+}
+
+.loading .spin {
+    border: 3px solid hsla(185, 100%, 62%, 0.2);
+    border-top-color: #3cefff;
+    border-radius: 50%;
+    width: 3em;
+    height: 3em;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
 .inputImg {
     opacity: 0;
     width: 159px;
-    top: -22px;
-    margin-left: -2px;
+    top: -2px;
+    margin-left: -157.5px;
     height: 159px;
-    position: relative;
+    position: absolute;
 }
-.Nombre input{
+
+.Nombre input {
     border: #08b1b1 2px solid;
     width: 33vw;
     height: 40px;
 }
-.Titulo input{
+
+.Titulo input {
     border: #08b1b1 2px solid;
     width: 33vw;
     height: 40px;
 }
-#Info{
+
+#Info {
     margin-top: 10px;
 }
-.Informacion textarea{
+
+.Informacion textarea {
     resize: none;
     width: 33vw;
     height: 88px;
@@ -72,17 +110,21 @@
     bottom: 7px;
     font-size: 23px;
 }
-@media only screen and (max-width:837px){
+
+@media only screen and (max-width:837px) {
     .modificarForm {
         width: 100%;
     }
-    .Nombre input{
+
+    .Nombre input {
         width: 75vw;
     }
-    .Titulo input{
+
+    .Titulo input {
         width: 75vw;
     }
-    .Informacion textarea{
+
+    .Informacion textarea {
         width: 75vw;
     }
 

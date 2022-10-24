@@ -8,6 +8,7 @@ import {ref,Storage,uploadBytes,getDownloadURL,list}  from '@angular/fire/storag
 })
 export class DatosService {
   url:string="";
+  carga:boolean = false;
   constructor(private http:HttpClient, private storage: Storage) { }
 
   public uploadImage($event:any, name:string, carpeta:string){
@@ -15,6 +16,7 @@ export class DatosService {
     const imgRef = ref(this.storage, carpeta+"/"+name)
     uploadBytes(imgRef, file)
     .then(async res => {
+      
       console.log(res)
       this.getImages()
     })
@@ -28,6 +30,7 @@ export class DatosService {
       for(let item of response.items){
         this.url = await getDownloadURL(item);
         console.log("La url es: " + this.url)
+        this.carga=false;
       }
     })
     .catch(error => console.log(error))

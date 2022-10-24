@@ -14,7 +14,7 @@ export class ModifAddPerfilComponent implements OnInit {
   id: any;
   public formPerfil!: FormGroup;
   Data: any;
-  constructor(private route: ActivatedRoute, private fb: FormBuilder, private service: DatosService, private router: Router) {
+  constructor(private route: ActivatedRoute, private fb: FormBuilder, public service: DatosService, private router: Router) {
     this.id = this.route.snapshot.params['id']
   }
   na: any = 'jeje'
@@ -33,11 +33,13 @@ export class ModifAddPerfilComponent implements OnInit {
       })
     })
 }
-
+carga:any=false;
 uploadImage($event:any){
   const name = "perfil_"+this.id;
   const carpeta="imagen"
   this.service.uploadImage($event, name,carpeta)
+  this.carga = true;
+  this.service.carga = true;
   
 }
 urlImg:any;
