@@ -1,0 +1,12 @@
+.containGeneral{
+    height: 100vh;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+}
+.contain{
+    background: #7e7e7e;
+    border-radius: 30px;
+    color: #eee;
+    padding: 40px;
+}

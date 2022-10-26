@@ -79,7 +79,7 @@
 	width: 205px;
 	
 }
-@media only screen and (max-height:592px){
+@media only screen and (max-height:492px){
 	.menu__cont{
 		display:none;
 	}

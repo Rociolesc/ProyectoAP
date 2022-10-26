@@ -35,14 +35,7 @@ export class DatosService {
     })
     .catch(error => console.log(error))
   }
-  
-
-
-
-  obtenerDatos():Observable<any>{
-    return ( this.http.get('./assets/Info.json'))
-  }
-
+ 
   get(tipo:any):Observable<any>{
     return ( this.http.get('http://localhost:8080'+tipo))
   }

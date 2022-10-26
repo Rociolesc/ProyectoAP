@@ -7,12 +7,16 @@
                 <div class="loading show" *ngIf="this.service.carga">
                     <div class="spin"></div>
                 </div>
-                <img style="width: 160px;height: 156px;"  [src]="!carga ? Data.img: this.service.url">
+                <img style="width: 160px;height: 136px;"  [src]="!carga ? Data.img: this.service.url">
                 <input class="inputImg" id="idE" formControlName="imagenPerfil" name="Imagen"
                     enctype="multipart/form-data" type="file" (change)="uploadImage($event)">
             </div>
+            <div>
+                <p style="    position: relative;top: -130px;right: -160px;
+            ">* La imagen se cambiara cuando cargue la imagen</p>
+            </div>
         </div>
-        <div style="margin-top: 350px;">
+        <div style="margin-top: 340px;">
             <div class="Nombre" id="Info">
                 <input id="idE" type="text" placeholder="Nombre" formControlName="nombre">
             </div>

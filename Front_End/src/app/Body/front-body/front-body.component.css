@@ -4,6 +4,16 @@
     margin-right: 15px;
     margin-top: 15px;
 }
+.inf{
+	background: #575352;
+    margin-bottom: -110px;
+    margin-top: 90px;
+    z-index: 0;
+    padding: 15px;
+    color: #eee;
+    margin: 90px 160px -110px 160px;
+    border-radius: 10px;
+}
 .btnCS{
 	background: #08b1b1;
     display: grid;
