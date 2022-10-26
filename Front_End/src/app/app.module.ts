@@ -30,6 +30,9 @@ import { PublicProyectoComponent } from './Public_Component/public-proyecto/publ
 import { LoginComponent } from './Auth/login/login.component';
 import { FrontBodyComponent } from './Body/front-body/front-body.component';
 import { PublicBodyComponent } from './Body/public-body/public-body.component';
+import { LoginComponentComponent } from './Auth/login-component/login-component.component';
+import { provideAuth,getAuth } from '@angular/fire/auth';
+import { ErrorComponent } from './error/error.component';
 
 @NgModule({
   declarations: [
@@ -55,7 +58,9 @@ import { PublicBodyComponent } from './Body/public-body/public-body.component';
     PublicProyectoComponent,
     LoginComponent,
     FrontBodyComponent,
-    PublicBodyComponent
+    PublicBodyComponent,
+    LoginComponentComponent,
+    ErrorComponent,
   ],
   imports: [
     BrowserModule,
@@ -64,7 +69,8 @@ import { PublicBodyComponent } from './Body/public-body/public-body.component';
     FormsModule,
     ReactiveFormsModule,
     provideFirebaseApp(() => initializeApp(environment.firebase)),
-    provideStorage(() => getStorage())
+    provideStorage(() => getStorage()),
+    provideAuth(() => getAuth())
   ],
   providers: [],
   bootstrap: [AppComponent]
