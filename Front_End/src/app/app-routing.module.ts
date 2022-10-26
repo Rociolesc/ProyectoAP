@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { LoginComponentComponent } from './Auth/login-component/login-component.component';
 import { LoginComponent } from './Auth/login/login.component';
 import { FrontBodyComponent } from './Body/front-body/front-body.component';
 import { PublicBodyComponent } from './Body/public-body/public-body.component';
@@ -8,13 +9,16 @@ import { ModifAddFormacionComponent } from './Edit_Component/Form/modif-add-form
 import { ModifAddHabilidadComponent } from './Edit_Component/Form/modif-add-habilidad/modif-add-habilidad.component';
 import { ModifAddPerfilComponent } from './Edit_Component/Form/modif-add-perfil/modif-add-perfil.component';
 import { ModifAddProyectoComponent } from './Edit_Component/Form/modif-add-proyecto/modif-add-proyecto.component';
+import { ErrorComponent } from './error/error.component';
+import {canActivate,redirectUnauthorizedTo} from '@angular/fire/auth-guard'
 
 const routes: Routes = [
   {path: "",component: PublicBodyComponent},
-  {path: "edit",component: FrontBodyComponent},
+  {path: "edit",component: FrontBodyComponent,...canActivate(()=>redirectUnauthorizedTo(['/**']))},
+  {path: "auth",component:LoginComponentComponent},
   {path: "login",component:LoginComponent },
   {
-    path: "edit",component: FrontBodyComponent, children:[
+    path: "edit",component: FrontBodyComponent,...canActivate(()=>redirectUnauthorizedTo(['/**'])), children:[
       {path:'modificarPerfil/:id', component:ModifAddPerfilComponent},
       {path:'modificarFormacion', component:ModifAddFormacionComponent },
       {path:'modificarFormacion/:id', component:ModifAddFormacionComponent },
@@ -26,6 +30,7 @@ const routes: Routes = [
       {path:'modificarExperiencia/:id', component:ModifAddExperienciaComponent },
     ]
   },
+  {path: "**",component:ErrorComponent}
 ];
 
 @NgModule({
