@@ -14,11 +14,11 @@ import {canActivate,redirectUnauthorizedTo} from '@angular/fire/auth-guard'
 
 const routes: Routes = [
   {path: "",component: PublicBodyComponent},
-  {path: "edit",component: FrontBodyComponent},
+  {path: "edit",component: FrontBodyComponent,...canActivate(()=>redirectUnauthorizedTo(['/**']))},
   {path: "auth",component:LoginComponentComponent},
   {path: "login",component:LoginComponent },
   {
-    path: "edit",component: FrontBodyComponent, children:[
+    path: "edit",component: FrontBodyComponent,...canActivate(()=>redirectUnauthorizedTo(['/**'])), children:[
       {path:'modificarPerfil/:id', component:ModifAddPerfilComponent},
       {path:'modificarFormacion', component:ModifAddFormacionComponent },
       {path:'modificarFormacion/:id', component:ModifAddFormacionComponent },
