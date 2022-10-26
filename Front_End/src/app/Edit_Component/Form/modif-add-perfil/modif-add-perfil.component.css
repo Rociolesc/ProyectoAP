@@ -23,7 +23,7 @@
 .Img {
     background: #fff;
     width: 160px;
-    height: 160px;
+    height: 140px;
     position: relative;
     top: 89px;
     border: #08b1b1 2px solid;
@@ -68,7 +68,7 @@
     width: 159px;
     top: -2px;
     margin-left: -157.5px;
-    height: 159px;
+    height: 137px;
     position: absolute;
 }
 

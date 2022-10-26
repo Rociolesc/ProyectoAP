@@ -18,17 +18,7 @@ export class FrontBodyComponent implements OnInit {
   public formacionLista: Array<any> = [];
 
   ngOnInit(): void {
-    this.informacion.obtenerDatos().subscribe((data: any) => {
-
-      this.Data = data;
-      this.formacionLista.push(this.Data.formacion.utn);
-      this.formacionLista.push(this.Data.formacion.nacional);
-      this.formacionLista.push(this.Data.formacion.ArP);
-
-
-
-    });
-
+    
   }
   logout() {
     console.log("logout")
