@@ -29,16 +29,18 @@ export class LoginComponent implements OnInit {
 
   ngOnInit(): void {
   }
+mensaje(){
+  this.mensajeError = false;
+}
 
-
-
+mensajeError:boolean=false;
   onEnviar(){
     let email=this.form.value.email + "@gmail.com"
     this.autenticationService.login(email,this.form.value.password)
     .then(response => {
       console.log(response)
       this.ruta.navigate(["/edit"])
-    }).catch(error => console.log(error));
+    }).catch(error => this.mensajeError = true);
   }
 
 }

@@ -4,11 +4,13 @@
     <div class="container_login">
         <form [formGroup]="form" (submit)="onEnviar()"  class="login">
             <label class="label">Username</label>
-            <input class="input" type="text" formControlName="email">
+            <input class="input" type="text" formControlName="email" (click)="mensaje()">
             
             <label class="label" style="padding-top: 70px;">Password</label>
-            <input class="input" type="text" formControlName="password">
+            <input class="input" type="text" (click)="mensaje()" formControlName="password">
             <button class="Ingresar">Ingresar</button>
+            
         </form>
+        <h3 style="color:rgb(163, 9, 9);margin-bottom:10px" *ngIf="mensajeError == true" >Contraseña o usuario incorrecto</h3>
     </div>
 </div>

@@ -30,7 +30,6 @@ import { PublicProyectoComponent } from './Public_Component/public-proyecto/publ
 import { LoginComponent } from './Auth/login/login.component';
 import { FrontBodyComponent } from './Body/front-body/front-body.component';
 import { PublicBodyComponent } from './Body/public-body/public-body.component';
-import { LoginComponentComponent } from './Auth/login-component/login-component.component';
 import { provideAuth,getAuth } from '@angular/fire/auth';
 import { ErrorComponent } from './error/error.component';
 
@@ -59,7 +58,6 @@ import { ErrorComponent } from './error/error.component';
     LoginComponent,
     FrontBodyComponent,
     PublicBodyComponent,
-    LoginComponentComponent,
     ErrorComponent,
   ],
   imports: [
