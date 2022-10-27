@@ -1,6 +1,5 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { LoginComponentComponent } from './Auth/login-component/login-component.component';
 import { LoginComponent } from './Auth/login/login.component';
 import { FrontBodyComponent } from './Body/front-body/front-body.component';
 import { PublicBodyComponent } from './Body/public-body/public-body.component';
@@ -15,7 +14,6 @@ import {canActivate,redirectUnauthorizedTo} from '@angular/fire/auth-guard'
 const routes: Routes = [
   {path: "",component: PublicBodyComponent},
   {path: "edit",component: FrontBodyComponent,...canActivate(()=>redirectUnauthorizedTo(['/**']))},
-  {path: "auth",component:LoginComponentComponent},
   {path: "login",component:LoginComponent },
   {
     path: "edit",component: FrontBodyComponent,...canActivate(()=>redirectUnauthorizedTo(['/**'])), children:[
