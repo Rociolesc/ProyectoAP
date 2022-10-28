@@ -65,17 +65,19 @@ export class ModifAddFormacionComponent implements OnInit {
   actual(event:any){
     console.log(event.target.checked)
     this.act = event.target.checked
-    if(event.target.checked == true){
+    if(event.target.checked == true ){
       this.formFormacion.value.fechaFinal="Actualmente"
     }
   }
   public img: string = './assets/imagenes/foto.png'
   modificar() {
     let tipo = '/formacion/crear'
+    if( this.formFormacion.value.fechaFinal == null ){
+        this.formFormacion.value.fechaFinal="Actualmente";
     if (this.modoEdicion != null && this.modoEdicion === 1) {
-      if( this.formFormacion.value.fechaInicio == Date()){
-        console.log("Si es hoy")
-      }
+
+      
+      
       let formacion1 = new Formacion(this.id, this.formFormacion.value.fechaInicio, this.formFormacion.value.fechaFinal, this.formFormacion.value.carrera)
       this.service.post(tipo, formacion1)
       this.router.navigate(["/edit"])
@@ -89,7 +91,7 @@ export class ModifAddFormacionComponent implements OnInit {
       
 
     }
-    
+    }
   }
 
   cancelar(){
