@@ -16,32 +16,6 @@ h1 {
 	width: 264px;
 	left: 0;
 }
-.TextareaHabilidad{
-	display: none;
-    top: -16px;
-    padding-top: 11px;
-    padding-left: 0;
-    position: absolute;
-    width: 200px;
-    height: 58px;
-    text-align: center;
-    font-size: 26px;
-    right: -0.2vw;
-    background-color: rgb(88 83 83);
-    color: rgb(221 221 221);
-    resize: none;
-    margin-block-start: 0.67em;
-    margin-block-end: 0.67em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-    font-weight: normal;
-    border-radius: 45px;
-    font-family: SFMono-Regular;
-    outline: rgb(34, 243, 243) 1px solid;
-}
-#textareaResol{
-	width: 303px;
-}
 .Resp__cont {
 	width: fit-content;
 	padding:0px 20px;
@@ -80,67 +54,7 @@ h1 {
 	height: 26px;
 	border-radius: 20px;
 }
-.Resol__cont{
-	width: fit-content;
-	padding:0px 20px;
-	border-radius: 30px;
-	text-align: center;
-	background: rgb(88,83,83) ;
-	margin-top: 64px;
-	position: relative;
-	z-index: 400;
-	margin-left: 40px;
-}
-.contEditFormHResol{
-	height: 60px;
-	overflow-y: auto;
-}
-.colorFontHResol1{
-	font-size: 23px;
-	padding-top: 16px;
-	color:rgb(221,221,221);
-}
-.Proac__cont{
-	width: fit-content;
-	padding:0px 20px;
-	border-radius: 30px;
-	text-align: center;
-	background: rgb(88,83,83);
-	margin-top: 64px;
-	position: relative;
-	z-index: 400;
-	margin-left: 40px;
-}
-.contEditFormHProac{
-	height: 60px;
-	overflow-y: auto;
-}
-.colorFontHProac1{
-	font-size: 23px;
-	padding-top: 16px;
-	color: rgb(221,221,221);
-}
-.Ingles__cont{
-	font-size: 23px;
-	width: fit-content;
-	padding:0px 20px;
-	border-radius: 30px;
-	text-align: center;
-	background: rgb(88,83,83);
-	margin-top: 64px;
-	position: relative;
-	z-index: 400;
-	margin-left: 40px;
-}
-.contEditFormHIngles{
-	height: 60px;
-	overflow-y: auto;
-}
-.colorFontHIngles1{
-	font-size: 23px;
-	padding-top: 16px;
-	color: rgb(221,221,221);
-}
+
 .btnAdd {
     width: 100%;
     height: 50px;
@@ -152,7 +66,8 @@ h1 {
 	display: grid;
 	text-align: center;
 	justify-items: center;
-	margin-left: 0px;
+	margin-left: 0px;  
+
 }
 #Habilidadess div{
 	margin-left: 0px;
@@ -218,9 +133,3 @@ h1 {
 	background: #1C1A1A;
 	
 }
-.icon__X-FP{
-position: absolute;
-margin-top: 0px;
-margin-left: 10px;
-}
-

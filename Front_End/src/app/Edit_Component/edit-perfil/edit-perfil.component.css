@@ -1,15 +1,12 @@
 .col{
 	position: relative;
-	
+	height: auto;
 	z-index: 301;
 }
 h1 {
 	border-bottom: 2px solid #88b2ff;
 	}
-.col__perfil {
-	height: auto;
 
-}
 .tit{
     color: #08b1b1;
     position: absolute;
@@ -65,67 +62,6 @@ h1 {
 	font-size: 20px;
 }
 
-.text__Perfil-h2{
-	display: none;
-    top: -26px;
-    position: absolute;
-    width: 32.5vw;
-    height: 52px;
-    text-align: center;
-    font-size: 40px;
-    right: 3.5vw;
-    background-color: rgb(87 83 82 );
-    color: rgb(34, 243, 243);
-    resize: none;
-    margin-block-start: 0.67em;
-    margin-block-end: 0.67em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-    font-weight: bold;
-    font-family: SFMono-Regular;
-    outline: rgb(34, 243, 243) 1px solid;
-}
-.text__Perfil-h3{
-	display: none;
-    top: 33px;
-    position: absolute;
-    width: 32.5vw;
-    height: 38px;
-    text-align: center;
-    font-size: 30px;
-    right: 3.5vw;
-    padding-top: 0px;
-    background-color: rgb(87 83 82 );
-    color: rgb(243 243 243);
-    resize: none;
-    margin-block-start: 0.67em;
-    margin-block-end: 0.67em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-    font-weight: bold;
-    font-family: SFMono-Regular;
-    outline: rgb(34, 243, 243) 1px solid;
-}
-.text__Perfil-p{
-	display: none;
-    top: 79px;
-    position: absolute;
-    width: 32.5vw;
-    height: 249px;
-    text-align: center;
-    font-size: 20px;
-    right: 3.5vw;
-    padding-top: 0px;
-    background-color: rgb(87 83 82);
-    color: rgb(0 0 0);
-    resize: none;
-    margin-block-start: 0.67em;
-    margin-block-end: 0.67em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-    font-family: SFMono-Regular;
-    outline: rgb(34, 243, 243) 1px solid;
-}
 .carga__Img {
     position: absolute;
     background: #575352;
@@ -154,47 +90,6 @@ h1 {
     top: 127px;
     border: #599c98 3px solid;
     margin-left: 62px;
-}
-.btnAdd{
-    width: 100%;
-    height: 50px;
-    margin-top: 20px;
-}
-
-
-@media only screen and (max-width:1004px){
-	.text__Perfil-h2 {
-		width: 30.5vw;
-		height: 90px;
-	}
-	.text__Perfil-h3{
-		width: 30.5vw;
-		height: 73px;
-		top: 70px;
-	}
-	.text__Perfil-p{
-		width: 37.5vw;
-    	height: 179px;
-    	top: 150px;
-	}
-}
-@media only screen and (max-width:950px){
-
-    .text__Perfil-h2 {
-        width: 27.5vw;
-        height: 98px;
-    }
-    .text__Perfil-h3 {
-        width: 27.5vw;
-        height: 73px;
-        top: 75px;
-    }
-    .text__Perfil-p{
-        width: 35.5vw;
-        height: 171px;
-        top: 155px;
-    }
-
 }
 @media only screen and (max-width:837px){
 .carga__Img {
@@ -232,10 +127,6 @@ h1 {
 	width:78.3vw ;
 	left: auto;
 }
-#contEditPerfil{
-	margin-top: 100px;
-	height: 248px;
-}
 .info__perfil{
 	margin-top: 250px;
 	padding:15px;
@@ -243,100 +134,13 @@ h1 {
 	margin-left: 0px;
 	left: auto;
 	text-align: center;
-	
-}
-
-.text__Perfil-h2{
-    top: -24px;
-    position: absolute;
-    width: 69vw;
-    height: 61px;
-    
-    text-align: center;
-    font-size: 40px;
-	right: 0.5vw;
-    padding-top: 11px;
-    background-color: rgb(87 83 82);
-    color: rgb(34, 243, 243);
-    resize: none;
-    margin-block-start: 0.67em;
-    margin-block-end: 0.67em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-    font-weight: bold;
-    font-family: SFMono-Regular;
-    outline:rgb(34, 243, 243) 1px solid ;
-}
-.text__Perfil-h3{
-
-    top: 44px;
-    position: absolute;
-    width: 69vw;
-    height: 38px;
-    text-align: center;
-    font-size: 30px;
-    right: 0.5vw;
-    padding-top: 0px;
-    background-color: rgb(87 83 82);
-    color: rgb(243 243 243);
-    resize: none;
-    margin-block-start: 0.67em;
-    margin-block-end: 0.67em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-    font-weight: bold;
-    font-family: SFMono-Regular;
-    outline: rgb(34, 243, 243) 1px solid;
-}
-.text__Perfil-p{
-    top: 89px;
-    position: absolute;
-    width: 69vw;
-    height: 136px;
-    text-align: center;
-    font-size: 20px;
-    right: 0.5vw;
-    padding-top: 0px;
-    background-color: rgb(87 83 82);
-    color: rgb(0 0 0);
-    resize: none;
-    margin-block-start: 0.67em;
-    margin-block-end: 0.67em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-    font-family: SFMono-Regular;
-    outline: rgb(34, 243, 243) 1px solid;
-}
-.btnAdd{
-    position: relative;
-    right: 22px;
+	margin-top: 100px;
+	height: 248px;
 }
 @media only screen and (max-width:460px){
     #contEditPerfil {
         margin-top: 100px;
         height: 394px;
-    }
-    .text__Perfil-p {
-        top: 166px;
-        position: absolute;
-        width: 69vw;
-        height: 201px;
-    }
-    .text__Perfil-h3 {
-        top: 83px;
-        position: absolute;
-        width: 69vw;
-        height: 76px;
-    }
-    .text__Perfil-h2{
-        top: -24px;
-        position: absolute;
-        width: 69vw;
-        height: 100px;
-        text-align: center;
-        font-size: 40px;
-        right: 0.5vw;
-        padding: 3px 5px 0px;
     }
 }
 
@@ -356,18 +160,6 @@ h1 {
 	right: -20px;
 	text-align: center;
 }
-.edit__perfilnone{
-	display:none;
-	position: absolute;
-	border-radius: 90% ;
-	background:rgba(28, 26, 26);
-	outline: rgb(34, 243, 243) 3px solid;
-	width: 50px;
-	height: 50px;
-	top: -14px;
-	right: -20px;
-	text-align: center;
-}
 .icon__edit-perfil{
 	width: 25px;
 	position: absolute;
@@ -375,27 +167,6 @@ h1 {
 	margin-left: -10px;
 	
 }
-/*********Boton2***********/
-.edit__perfil-2{
-
-	position: absolute;
-	width: 50px;
-	top:-15px ;
-	right: -20px;
-	
-}
-.edit__perfil-2 img{
-	display: inline-block;
-	outline: rgb(34, 243, 243) 3px solid ;
-	border-radius: 90px;
-	background: #1C1A1A;
-}
-.icon__X-perfil{
-position: absolute;
-margin-top: 60px;
-margin-left: -50px;
-}
-
 @media only screen and (max-width:837px){
     .edit__perfil{
         margin-top: -20px;
