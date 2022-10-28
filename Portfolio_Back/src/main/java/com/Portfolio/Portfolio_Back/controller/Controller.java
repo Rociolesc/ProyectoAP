@@ -23,7 +23,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-@CrossOrigin(origins = "**")
+@CrossOrigin(origins = "https://portfolio-61502.web.app")
 public class Controller {
 
     @Autowired
@@ -42,6 +42,7 @@ public class Controller {
     private IPerfilService perfServ;
 
     /*---------------------------------------------------Formacion----------------------------------------------*/
+
     @GetMapping("/formacion/ver")
     @ResponseBody
     public List<Formacion> verFormacion() {

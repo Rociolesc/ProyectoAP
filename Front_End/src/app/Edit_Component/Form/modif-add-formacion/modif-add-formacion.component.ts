@@ -73,7 +73,7 @@ export class ModifAddFormacionComponent implements OnInit {
   modificar() {
     let tipo = '/formacion/crear'
     if( this.formFormacion.value.fechaFinal == null ){
-        this.formFormacion.value.fechaFinal="Actualmente";
+        this.formFormacion.value.fechaFinal="Actualmente";}
     if (this.modoEdicion != null && this.modoEdicion === 1) {
 
       
@@ -91,7 +91,7 @@ export class ModifAddFormacionComponent implements OnInit {
       
 
     }
-    }
+    
   }
 
   cancelar(){

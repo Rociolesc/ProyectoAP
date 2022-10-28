@@ -77,6 +77,8 @@ console.log(this.Data)
   public img: string = './assets/imagenes/foto.png'
   modificar(){
     let tipo = '/experiencia/crear'
+    if( this.formExperiencia.value.fechaFinal == null ){
+      this.formExperiencia.value.fechaFinal="Actualmente";}
     if (this.modoEdicion != null && this.modoEdicion === 1) {
       let experiencia1 = new Experiencia(this.id,this.formExperiencia.value.fechaInicio,this.formExperiencia.value.fechaFinal,this.formExperiencia.value.nombreEmpresa,this.formExperiencia.value.puesto)
       console.log(experiencia1)
@@ -89,7 +91,7 @@ console.log(this.Data)
       this.router.navigate(["/edit"])
 
     }
+  
   }
-
 
 }
