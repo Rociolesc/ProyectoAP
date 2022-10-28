@@ -39,7 +39,7 @@ this.Accion = 'Agregar';
     this.formG()
     if (this.modoEdicion != null && this.modoEdicion === 1) {
       let tipo = '/habilidad/ver'
-      this.Titulo = 'Modificar Formacion';
+      this.Titulo = 'Modificar Habilidad';
       this.Accion = 'Modificar'
       this.service.getId(tipo, this.id).subscribe((data: any) => {
         this.Data = data
@@ -57,7 +57,7 @@ this.Accion = 'Agregar';
         habilidad: ["", [Validators.required]],
         porcentaje: ["", [Validators.required]],
       })
-      this.Titulo = 'Agregar Formacion';
+      this.Titulo = 'Agregar Habilidad';
       this.Accion = 'Agregar'
       return
     }
